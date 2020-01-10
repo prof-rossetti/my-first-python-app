@@ -1,6 +1,6 @@
-# My First Python App
+# Rock-Paper-Scissors Starter App (Python)
 
-An introductory Python application (an unfinished game of rock-paper-scissors) for instructional purposes.
+An introductory Python application (a starter game of rock-paper-scissors), for instructional purposes.
 
 ## Prerequisites
 
@@ -37,9 +37,9 @@ pip install -r requirements.txt
 
 In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
 
-    USER_NAME="Your Name"
+    USER_NAME="John Snow"
 
-> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (via the [.gitignore](/.gitignore) file)
+> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [.gitignore](/.gitignore) file)
 
 ## Usage
 
@@ -47,8 +47,6 @@ Run the game script:
 
 ```py
 python app/my_game.py
-
-# OR ...
-
-python -m app.my_game
 ```
+
+> NOTE: if you see an error like "ModuleNotFoundError: No module named 'game_utils'", it's because the "game_utils" package isn't installed, so run the `pip` command above to install that package
