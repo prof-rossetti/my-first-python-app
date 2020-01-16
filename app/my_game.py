@@ -6,7 +6,7 @@ from dotenv import load_dotenv # see: https://github.com/theskumar/python-dotenv
 
 load_dotenv()
 
-USER_NAME = os.getenv("USER_NAME", default="Player One")
+USER_NAME = os.getenv("USER_NAME", default="The Rock")
 
 OPTIONS = ["rock", "paper", "scissors"]
 
