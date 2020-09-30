@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print(f"COMPUTER CHOSE: '{computer_choice}'")
 
     winning_choice = determine_winner(user_choice, computer_choice)
-    print(f"WINNING CHOICE: '{winning_choice}'")
+    print(f"Great your guess is right \n Wow, you won ;-) \ n WINNING CHOICE: '{winning_choice}'")
 
     print("-------------------")
     print("THANKS, PLEASE PLAY AGAIN!")
