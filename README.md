@@ -56,8 +56,8 @@ python -m app.my_script
 
 ## Further Exploration
 
-Un-comment the commented lines (13, 48, and 49) in "my_script.py". This code will attempt to import and use a function defined in the my_mod.py" file.
+If you would optionally like to learn the tricks for importing code from one local Python file to another, also attempt the steps below:
 
-After un-commenting these lines, save the file and try to re-run it.
+1. Un-comment the commented lines (13, 48, and 49) in "my_script.py". This code will attempt to import and use a function defined in the my_mod.py" file. After un-commenting these lines, save the file and try to re-run it. Notice the file will only run if you use the alternative module-style command (`python -m app.my_script`).
 
-Notice the file will only run if you use the alternative module-style command.
+2. Read the contents of "my_mod.py". Try to run that file directly. Notice nothing happens. Un-comment the code in the global scope, save the file, and try to run the file directly. Notice it works, but if you try to run the "my_script.py" file again, the script is now broken. Finally, re-comment the code in the global scope, and un-comment the main conditional at the bottom, then save the file and re-run both the my_mod.py" and "my_script.py" files to see they now both work.

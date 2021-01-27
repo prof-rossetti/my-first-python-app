@@ -33,11 +33,11 @@ def to_usd(my_price):
 # ... then it will allow us to cleanly import the function from other files
 # ... while simultaneously allowing us to run this script to perform its own functionality:
 #
-if __name__ == "__main__":
-    #
-    # This conditional basically says "only run the code below if this script is invoked from the command-line"
-    # ... (but not if it is imported from another script)
-    # For more information, see: https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts
-
-    y = int(input("Please choose a number: "))
-    print(y, to_usd(y))
+#if __name__ == "__main__":
+#    #
+#    # This conditional basically says "only run the code below if this script is invoked from the command-line"
+#    # ... (but not if it is imported from another script)
+#    # For more information, see: https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts
+#
+#    y = int(input("Please choose a number: "))
+#    print(y, to_usd(y))
