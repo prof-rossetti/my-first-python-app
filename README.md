@@ -1,11 +1,11 @@
-# Rock-Paper-Scissors Starter App (Python)
+# My First Python App
 
-An introductory Python application (a starter game of rock-paper-scissors), for instructional purposes.
+An example Python application for students to run to test their local development environment setups.
 
 ## Prerequisites
 
-  + Anaconda 3.7
-  + Python 3.7
+  + Anaconda 3.7+
+  + Python 3.7+
   + Pip
 
 ## Installation
@@ -18,11 +18,11 @@ Then navigate there from the command line (subsequent commands assume you are ru
 cd my-first-python-app
 ```
 
-Use Anaconda to create and activate a new virtual environment, perhaps called "game-env":
+Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
 
 ```sh
-conda create -n game-env python=3.7 # (first time only)
-conda activate game-env
+conda create -n my-first-env python=3.8
+conda activate my-first-env
 ```
 
 From inside the virtual environment, install package dependencies:
@@ -46,7 +46,7 @@ In in the root directory of your local repository, create a new file called ".en
 Run the game script:
 
 ```py
-python app/my_game.py
+python app/my_script.py
 ```
 
-> NOTE: if you see an error like "ModuleNotFoundError: No module named 'game_utils'", it's because the "game_utils" package isn't installed, so run the `pip` command above to install that package
+> NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment
