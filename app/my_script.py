@@ -21,7 +21,7 @@ load_dotenv() # invokes / uses the function we got from the third-party package.
 USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
 
 #
-# 3) After that, we define any custom functions required by our program
+# 3) After that, we define any custom functions required by our program:
 #
 
 def enlarge(n):
@@ -33,7 +33,7 @@ def enlarge(n):
     return n * 100
 
 #
-# Finally, at the bottom, we write code to perform the desired functionality.
+# Finally, at the bottom, we write code to perform the desired functionality:
 #
 
 print("-------------------")
