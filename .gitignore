@@ -1,3 +1,9 @@
+
+# ignore some hidden files that appear on Mac OS:
 .DS_Store
 
+# ignore the ".env" file, which may contain secret credentials we don't want to get uploaded to GitHub
 .env
+
+# ignore some files that may get generated when running python modules:
+__pycache__

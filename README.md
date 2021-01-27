@@ -1,11 +1,11 @@
-# Rock-Paper-Scissors Starter App (Python)
+# My First Python App
 
-An introductory Python application (a starter game of rock-paper-scissors), for instructional purposes.
+An example Python application for students to run to test their local development environment setups.
 
 ## Prerequisites
 
-  + Anaconda 3.7
-  + Python 3.7
+  + Anaconda 3.7+
+  + Python 3.7+
   + Pip
 
 ## Installation
@@ -18,11 +18,11 @@ Then navigate there from the command line (subsequent commands assume you are ru
 cd my-first-python-app
 ```
 
-Use Anaconda to create and activate a new virtual environment, perhaps called "game-env":
+Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
 
 ```sh
-conda create -n game-env python=3.7 # (first time only)
-conda activate game-env
+conda create -n my-first-env python=3.8
+conda activate my-first-env
 ```
 
 From inside the virtual environment, install package dependencies:
@@ -46,7 +46,18 @@ In in the root directory of your local repository, create a new file called ".en
 Run the game script:
 
 ```py
-python app/my_game.py
+python app/my_script.py
+
+# alternative module-style invocation (only required if importing from one file to another):
+python -m app.my_script
 ```
 
-> NOTE: if you see an error like "ModuleNotFoundError: No module named 'game_utils'", it's because the "game_utils" package isn't installed, so run the `pip` command above to install that package
+> NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment
+
+## Further Exploration
+
+If you would optionally like to learn the tricks for importing code from one local Python file to another, also attempt the steps below:
+
+1. Un-comment the commented lines (13, 48, and 49) in "my_script.py". This code will attempt to import and use a function defined in the "my_mod.py" file. After un-commenting these lines, save the file and try to re-run it. Notice the file will only run if you use the alternative module-style command (`python -m app.my_script`).
+
+2. Read the contents of "my_mod.py". Try to run that file directly. Notice nothing happens. Un-comment the code in the global scope, save the file, and try to run the file directly. Notice it works, but if you try to run the "my_script.py" file again, the script is now broken. Finally, re-comment the code in the global scope of the "my_mod.py" file, and instead un-comment the main conditional at the bottom, then save the file and re-run both the "my_mod.py" and "my_script.py" files to see they now both work.
