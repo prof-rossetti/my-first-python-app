@@ -47,6 +47,17 @@ Run the game script:
 
 ```py
 python app/my_script.py
+
+# alternative module-style invocation (only required if importing from one file to another):
+python -m app.my_script
 ```
 
 > NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment
+
+## Further Exploration
+
+Un-comment the commented lines (13, 48, and 49) in "my_script.py". This code will attempt to import and use a function defined in the my_mod.py" file.
+
+After un-commenting these lines, save the file and try to re-run it.
+
+Notice the file will only run if you use the alternative module-style command.

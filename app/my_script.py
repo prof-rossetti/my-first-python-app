@@ -10,7 +10,7 @@ import random
 
 from dotenv import load_dotenv # see: https://github.com/theskumar/python-dotenv
 
-from app.my_mod import to_usd
+#from app.my_mod import to_usd
 
 #
 # 2) After that, we generally run any setup code, like setting environment vars:
@@ -45,9 +45,5 @@ print("EXAMPLE USAGE OF VARS AND FUNCTIONS...")
 x = 5
 result = enlarge(x)
 print(result)
-formatted_result = to_usd(result)
-print(formatted_result)
-
-print("-------------------")
-print("EQUIVALENT EXAMPLE USAGE OF FUNCTIONS...")
-print(to_usd(enlarge(7)))
+#formatted_result = to_usd(result)
+#print(formatted_result)

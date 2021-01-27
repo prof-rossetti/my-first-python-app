@@ -39,5 +39,5 @@ if __name__ == "__main__":
     # ... (but not if it is imported from another script)
     # For more information, see: https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts
 
-    y = int(input("Please choose a number"))
+    y = int(input("Please choose a number: "))
     print(y, to_usd(y))
