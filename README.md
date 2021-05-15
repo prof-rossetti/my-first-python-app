@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
 
-    USER_NAME="John Snow"
+    USER_NAME="Jon Snow"
 
 > NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [.gitignore](/.gitignore) file)
 
