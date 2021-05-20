@@ -1,1 +1,16 @@
+
+# this is the "requirements.txt" file.
+# it signals to humans and computers / servers that "there is a python app in this repo",
+# ... and helps facilitate the installation of third-party packages our program requires.
+
+# we write the names of each package, each on its own line.
+# right now we're just using one ("python-dotenv"),
+# ... but it's common for an app to have lots of dependencies (like "pandas", etc).
+
 python-dotenv
+
+# pandas
+
+# other_package
+
+# etc.
