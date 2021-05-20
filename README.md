@@ -25,13 +25,13 @@ conda create -n my-first-env python=3.8
 conda activate my-first-env
 ```
 
-From inside the virtual environment, install package dependencies:
+After activating the virtual environment, install package dependencies (see the ["requirements.txt"](/requirements.txt) file):
 
 ```sh
 pip install -r requirements.txt
 ```
 
-> NOTE: if this command throws an error like "Could not open requirements file: [Errno 2] No such file or directory", make sure you are running it from the repository's root directory, where the requirements.txt file exists (see the initial `cd` step above)
+> NOTE: if this command throws an error like "Could not open requirements file: [Errno 2] No such file or directory", make sure you are running it from the repository's root directory, where the requirements.txt file exists (see the initial `cd` step above).
 
 ## Setup
 
@@ -40,7 +40,7 @@ In in the root directory of your local repository, create a new file called ".en
     USER_NAME="Jon Snow"
     SECRET_PASSWORD="super duper secret"
 
-> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [.gitignore](/.gitignore) file)
+> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [".gitignore"](/.gitignore) file). This means each person who uses our code needs to create their own local ".env" file.
 
 ## Usage
 
@@ -53,8 +53,8 @@ python app/my_script.py
 python -m app.my_script
 ```
 
-> NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment
+> NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment.
 
 ## Further Exploration
 
-In the "app/my_script.py" file, un-comment lines 13, and lines 57-62. This code will attempt to import and use a function defined in the "app/my_mod.py" file. After un-commenting these lines, save the file and try to re-run it. Notice the file will only run if you use the alternative module-style command (`python -m app.my_script`).
+In the "app/my_script.py" file, un-comment lines 13, and lines 57-62. This code attempts to import and use a function defined in the "app/my_mod.py" file. After un-commenting these lines, save the file and try to re-run it. Notice the file will only run if you use the alternative module-style command (`python -m app.my_script`).
