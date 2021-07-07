@@ -40,7 +40,7 @@ def enlarge(n):
 # ... we can keep the functionality on the left margin, in the global scope (as it is right now).
 #
 # Otherwise if we need to import functionality from this file to other files:
-# ... we'd need to nest this code under the "main conditional" (see "app/my_mod.py")
+# ... we'd need to nest this code under a "main conditional" (see example of this in "app/my_mod.py")
 #
 
 print("-------------------")
