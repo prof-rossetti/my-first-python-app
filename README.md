@@ -55,6 +55,3 @@ python -m app.my_script
 
 > NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment.
 
-## Further Exploration
-
-In the "app/my_script.py" file, un-comment lines 13, and lines 57-62. This code attempts to import and use a function defined in the "app/my_mod.py" file. After un-commenting these lines, save the file and try to re-run it. Notice the file will only run if you use the alternative module-style command (`python -m app.my_script`).
