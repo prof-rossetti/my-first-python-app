@@ -35,16 +35,16 @@ pip install -r requirements.txt
 
 ## Setup
 
-In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
+In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username (then make sure to SAVE the ".env" file aftwards):
 
     USER_NAME="Jon Snow"
     SECRET_PASSWORD="super duper secret"
 
-> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [".gitignore"](/.gitignore) file). This means each person who uses our code needs to create their own local ".env" file.
+> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [".gitignore"](/.gitignore) file). This means we need to instruct each person who uses our code needs to create their own local ".env" file.
 
 ## Usage
 
-Run the game script:
+Run the Python script:
 
 ```py
 python app/my_script.py
