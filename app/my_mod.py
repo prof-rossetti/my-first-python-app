@@ -53,25 +53,16 @@ def calculate_triangle_area(base, height):
     return 0.5 * base * height
 
 
-#
-# If we import functions from a file like this, it will be important to ensure this file contains no code in its global scope.
-# In other words, all code in this module file should be contained within other stand-alone functions.
-#
-# Otherwise, if you were to uncomment the block of code below, save this file, and then re-run the my_script.py file,
-# ... you'll see this breaks our ability to import into that file.
-#
-# y = int(input("Please choose a number"))
-# print(y, enlarge(y))
-
-#
-# To overcome this limitation, if we nest the same block of code inside a special conditional called if __name__ == "__main__"
-# ... then it will allow us to cleanly import the functions from other files
-# ... while simultaneously allowing us to run this script directly to perform its own functionality:
 if __name__ == "__main__":
     #
-    # This conditional basically says "only run the code below if this script is invoked from the command-line"
-    # ... (but not if it is imported from another script)
+    # This weird "main conditional" basically says:
+    # ... "only run the code below if this file is run from the command-line".
+    #
+    # Placing code here (instead of the global scope where the functions are defined) 
+    # ... prevents that code from being executed when other Python files import from this file.
+    #
     # For more information, see: https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts
-
+    #
+    
     y = int(input("Please choose a number: "))
     print(y, to_usd(y))
