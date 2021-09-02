@@ -10,7 +10,8 @@
 
 import os
 from dotenv import load_dotenv # see: https://github.com/theskumar/python-dotenv
-#from app.my_mod import calculate_rectangle_area
+
+from app.my_mod import calculate_rectangle_area
 
 #
 # 2) After that, we generally run any setup code, like setting environment variables:
@@ -54,9 +55,9 @@ x = 5
 result = enlarge(x)
 print(x, "becomes...", result)
 
-#print("-------------------")
-#print("AREA FUNCTION INVOCATION EXAMPLE...")
-#l = 6
-#w = 4
-#area = calculate_rectangle_area(l,w)
-#print("L:", l, "W:", w, "AREA:", area)
+print("-------------------")
+print("AREA FUNCTION INVOCATION EXAMPLE...")
+l = 6
+w = 4
+area = calculate_rectangle_area(l, w)
+print("LENGTH:", l, "WIDTH:", w, "AREA:", area)
